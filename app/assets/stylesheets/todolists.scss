@@ -1,3 +1,22 @@
 // Place all the styles related to the todolists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.form-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
+.submit {
+  display: block;
+}
+
+.title-form {
+  position: relative;
+}
+
+.body-form {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

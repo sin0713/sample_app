@@ -1,20 +1,22 @@
-<h1>新規投稿</h1>
-<% if @list.errors.any? %>
-  <%= @list.errors.count %>件のエラーが発生しました
-  <% @list.errors.full_messages.each do |message| %>
-    <%= message %>
+
+
+
+<div class="form-wrapper">
+  <h1>新規投稿</h1>
+  <% if @list.errors.any? %>
+    <%= @list.errors.count %>件のエラーが発生しました
+    <% @list.errors.full_messages.each do |message| %>
+      <%= message %>
+    <% end %>
   <% end %>
-<% end %>
 
-
-
-
-<%= form_with model: @list, url:'/todolists', local:true do |f| %>
+  <%= form_with model: @list, url:'/todolists', local:true do |f| %>
   <h4>タイトル</h4>
-  <%= f.text_field :title %>
+  <%= f.text_field :title, class:"title-form"%>
 　<h4>本文</h4>
-　<%= f.text_area :body %>
+　<%= f.text_area :body, class:"body-form" %>
 　<h4>画像</h4>
 　<%= f.attachment_field :image %>
-　<%= f.submit '投稿' %>
+　<%= f.submit '投稿', class:"submit" %>
 <% end %>
+</div>
