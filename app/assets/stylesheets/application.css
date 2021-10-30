@@ -30,7 +30,7 @@ header {
   margin: 30px auto 0;
   text-align: center;
   border-top: solid 5px #000000;
-  
+
 }
 
 header .headline {
@@ -63,14 +63,18 @@ main {
 
 .list-wrap {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 .list-box {
   width: 200px;
   height: 250px;
-  margin: 10px;
+  margin: 80px 40px;
   position: relative;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition:opacity 1.2s, transform 1s;
 }
 
 .list-comment {
@@ -82,7 +86,7 @@ main {
 
 .list-body {
   display: block;
-  
+
   color: gray;
   font-size: 12px;
   overflow: hidden;
@@ -92,9 +96,14 @@ main {
 
 list-title {
   display: block;
-  
+
   font-size: 18px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.fadein {
+  opacity: 1;
+  transform: translateX(0);
 }

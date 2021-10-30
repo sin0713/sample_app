@@ -71,3 +71,6 @@ group :development, :test do
   gem 'awesome_print'
 end
 
+gem "jquery-rails"
+
+gem "pry-rails"

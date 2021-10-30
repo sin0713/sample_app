@@ -2,21 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .form-wrapper {
+  width: 60%;
   margin: 0 auto;
-  text-align: center;
-  
+  text-align: left;
+
 }
 
 .submit {
-  display: block;
-}
-
-.title-form {
-  position: relative;
-}
-
-.body-form {
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: inline-block;
 }
