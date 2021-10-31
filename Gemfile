@@ -75,3 +75,5 @@ gem "jquery-rails"
 gem "pry-rails"
 
 gem 'rubocop-airbnb'
+
+gem 'dotenv-rails'
