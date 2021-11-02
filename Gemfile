@@ -1,3 +1,4 @@
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -77,3 +78,5 @@ gem "pry-rails"
 gem 'rubocop-airbnb'
 
 gem 'dotenv-rails'
+
+gem 'image_processing', '>1.2'
